@@ -1,16 +1,14 @@
-var app = require('express')();
-var server = require('http').Server(app);
-server.listen(80);
+const express = require('express');
 
-app.get('/', function (req, res) {
-  res.sendfile(__dirname + '/index.html');
-});
-console.log('Express server started on port %s', server.address().port);
+const app = express();
 
-var port = process.env.PORT || 3000;
-app.get('/', function (req, res) {
-  res.sendfile(__dirname + '/index.html');
+app.use(express.static('./src'));
+
+app.get('/*', function (req, res) {
+  res.sendFile('index.html', { root: 'src' }
+  );
 });
-app.listen(port, function() {
-  console.log("Node app is running at localhost:" + app.get('port'))
-});
+
+app.listen(process.env.PORT || 8080);
+
+console.log(`Running on port ${process.env.PORT || 8080}`)

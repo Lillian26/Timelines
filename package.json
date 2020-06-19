@@ -1,37 +1,44 @@
 {
-  "name": "goals",
+  "name": "timelines",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "heroku-postbuild": "ng build --aot -prod"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.0.0-rc.2",
+    "@angular/cli": "^9.1.9",
     "@angular/common": "~10.0.0-rc.2",
     "@angular/compiler": "~10.0.0-rc.2",
+    "@angular/compiler-cli": "^10.0.0-rc.6",
     "@angular/core": "~10.0.0-rc.2",
     "@angular/forms": "~10.0.0-rc.2",
     "@angular/platform-browser": "~10.0.0-rc.2",
     "@angular/platform-browser-dynamic": "~10.0.0-rc.2",
     "@angular/router": "~10.0.0-rc.2",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
+    "typescript": "~3.9.5",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1000.0-rc.2",
-    "@angular/cli": "~10.0.0-rc.2",
-    "@angular/compiler-cli": "~10.0.0-rc.2",
+    "@angular/cli": "^9.1.9",
+    "@angular/compiler-cli": "^10.0.0-rc.6",
     "@angular/language-service": "~10.0.0-rc.2",
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
+    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~5.0.0",
@@ -43,5 +50,9 @@
     "ts-node": "~7.0.0",
     "tslint": "~6.1.0",
     "typescript": "~3.9.5"
+  },
+  "engines": {
+    "node": "12.14.0",
+    "npm": "6.13.4"
   }
 }

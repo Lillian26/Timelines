@@ -1,0 +1,3 @@
+2020.06.19 01:05:18 INFO  started: Metals version 0.9.0 in workspace '/home/lillian26/Documents/Wrk_Current/wrk_Reports/dynamic_things/timelines'
+2020.06.19 01:05:20 INFO  time: initialize in 2.49s
+2020.06.19 01:05:23 WARN  no build tool detected in workspace '/home/lillian26/Documents/Wrk_Current/wrk_Reports/dynamic_things/timelines'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 

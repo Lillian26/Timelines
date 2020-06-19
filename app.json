@@ -18,5 +18,8 @@
     },
     "addons": [
         "mongolab"
-    ]
+    ],
+    "types": [
+        "hammerjs"
+      ]
 }

@@ -2,5 +2,17 @@
   "name": "goals",
   "private": true,
   "description": "This is a special package.json file that is not used by package managers. It is however used to tell the tools and bundlers whether the code under this directory is free of code with non-local side-effect. Any code that does have non-local side-effects can't be well optimized (tree-shaken) and will result in unnecessary increased payload size. It should be safe to set this option to 'false' for new applications, but existing code bases could be broken when built with the production config if the application code does contain non-local side-effects that the application depends on.",
-  "sideEffects": true
+  "sideEffects": true,
+  "dependencies": {
+    "@angular/animations": "^9.1.11",
+    "@angular/cdk": "^9.2.4",
+    "@angular/material": "^9.2.4",
+    "@angular/platform-server": "^9.1.11",
+    "express": "^4.17.1",
+    "hammerjs": "^2.0.8"
+  },
+  "devDependencies": {
+    "@types/hammerjs": "^2.0.36",
+    "ts-node": "^8.10.2"
+  }
 }
